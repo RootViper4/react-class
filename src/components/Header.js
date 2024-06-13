@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Header() {
+function Header(props) {
   return (
     <div className='header'>
-        <div>Curriculum Vitae</div>
+        <div>{props.header} {props.count}</div>
         <div className='menu-nav'>
         <div>About</div>
         <div>Resume</div>
