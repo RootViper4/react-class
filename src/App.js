@@ -1,17 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Left from './components/Left';
-import Right from './components/Right';
+
+import Default from './pages/default';
+import About from './pages/about';
+
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  const x = 12;
-  const y = 13;
-  const result = x + y;
-  const name = "Root Benji";
   return (
     <div className="App">
-      <Left result={result} name={name}/>
-      <Right result={result} />
+     <Routes>
+      <Route path='/' element={<Default/>}/>
+      <Route path='/about' element={<About />} />
+     </Routes>
     </div>
   );
 }
