@@ -8,7 +8,7 @@ function Header(props) {
         <div className='menu-nav'>
           <div><Link to="/">Home</Link></div>
         <div><Link to="/about">About</Link></div>
-        <div>Resume</div>
+        <div> <Link to="/users">Users</Link></div>
         <div>Contact</div>
         </div>
     </div>
